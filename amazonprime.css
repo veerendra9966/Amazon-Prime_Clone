@@ -1,0 +1,473 @@
+*{
+    margin: 0px;
+    height: 0px;
+    box-sizing: border-box;
+}
+@media only screen and (orientation:landscape) {
+    body{
+        width: 100vw;
+        height: auto;
+        overflow-x:hidden ;
+    }
+    nav{
+        width: 100vw;
+        height: 48px;
+        background-color: black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    #mainnav{
+        width: 80vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav1{
+        width: 10%;
+        height: 18px;
+    }
+    #logo{
+        width: 6vw;
+        height: 4vh;
+    }
+    .nav2{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #mainlist{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items:center;
+        justify-content: space-evenly;
+    } 
+    #home{
+        width: 6vw;
+    }
+    #nav3{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #mainlist2{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #sublist{
+        width: 10vw;
+        height: 2.4vw;
+        display: none;
+        position: relative;
+        right: 40px;
+        z-index: 5;
+    }
+    .sublist2{
+        transition: 1s all;
+        background-color:#1d222a;
+        color: #aaa;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    .sublist2:hover{
+        transform: translate(50px);
+        background-color: white;
+        color: black;
+    }
+    li:hover{
+        color: aqua;
+    }
+    #home:hover>#sublist{
+        display: block;
+    }
+    li{
+        height: 100%;
+        list-style: none;
+        color: #AAAAAA;
+        font-weight:700;
+        cursor: pointer;
+        font-size: 1.5vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #content1,#content2{
+        width: 100vw;
+        height: 675px;
+        background-image: linear-gradient(to right, #000 40%, transparent 58%) ,url(./prime/prime1.jpg);
+        background-position: right top; 
+        background-repeat: no-repeat;
+        background-color: #000;
+        z-index: 0;
+    }
+    #content2{
+        background-image: linear-gradient(to right, #000 40%, transparent 58%) ,url(./prime/prime2.jpg);
+    }
+    #text1,#text2{
+        width: 548px;
+        height: 548px;
+        position: absolute;
+        margin:35px;
+    }
+    #header1,#header2{
+        color:white ;
+        font-family:Arial, Helvetica, sans-serif ;
+        letter-spacing: 1.5px;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    #para1,#para2{
+        color: white;
+        text-align: justify;
+        font-family:Arial, Helvetica, sans-serif ;
+        position: absolute;
+        top: 50px;
+        font-size: 20px;
+        padding: 10px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+    #span1,#span2{
+        height: 48px;
+        background-color: #0F79AF;
+        position: relative;
+        top: 150px;
+        padding: 14px 60px;
+        border-radius: 2px ;
+    }
+    #anchor1,#anchor2{
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }  
+    #content3{
+        width: 100vw;
+        height: 480px;
+        position: absolute;
+        
+    }
+    #text3{
+        width: 40%;
+        height: 100%;
+        position: absolute;
+        padding: 10px 2%;
+    }
+    #header3{
+        font-size: 43px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        position: absolute;
+        top: 30px;
+    }
+    #para3{
+        position: absolute;
+        top: 150px;
+        text-align: justify;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1x;
+        word-spacing: 2px;
+    }
+    #content4{
+        width: 50%;
+        height: auto;
+        position: absolute;
+        right: 0px;
+        top: 30px;
+    }
+    .box{
+        width: 175px;
+        height: 115px;
+    }
+
+    footer{
+        width: 100vw;
+        height: 136px;
+        background-color: #222222;
+        position: absolute;
+        bottom: -1445px;
+    }
+    #content5{
+        width: 100vw;
+        height:136px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #primevideo{
+        width: 120px;
+        height: 40px;
+    }
+    .lasttext{
+        text-decoration: none;
+        padding: 0px 10px ;
+        color: #00aaff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #para4{
+        color: #8197A4;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (orientation:portrait) {
+    body{
+        width: 100vw;
+        height: auto;
+        overflow-x:hidden ;
+    }
+    nav{
+        width: 100vw;
+        height: 48px;
+        background-color: black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    #mainnav{
+        width: 80vw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav1{
+        width: 10%;
+        height: 18px;
+    }
+    #logo{
+        width: 100%;
+        height: 100%;
+    }
+    .nav2{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #mainlist{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items:center;
+        justify-content: space-evenly;
+    } 
+    #home{
+        width: 6vw;
+    }
+    #nav3{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #mainlist2{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #sublist{
+        width: 10vw;
+        height: 2.4vw;
+        display: none;
+        position: relative;
+        right: 40px;
+        z-index: 5;
+    }
+    .sublist2{
+        transition: 1s all;
+        background-color:#1d222a;
+        color: #aaa;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    .sublist2:hover{
+        transform: translate(50px);
+        background-color: white;
+        color: black;
+    }
+    li:hover{
+        color: aqua;
+    }
+    #home:hover>#sublist{
+        display: block;
+    }
+    li{
+        height: 100%;
+        list-style: none;
+        color: #AAAAAA;
+        font-weight:700;
+        cursor: pointer;
+        font-size: 1.5vw;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #content1,#content2{
+        width: 100%;
+        height: 675px;
+        background-image: linear-gradient(to top, #000 40%, transparent 58%) ,url(./prime/prime1.jpg);
+        background-size: 100% ;
+        background-position: right top; 
+        background-repeat: no-repeat;
+        background-color: #000;
+        z-index: 0;
+        line-height: 2vw;
+    }
+    #content2{
+        background-image: linear-gradient(to top, #000 40%, transparent 58%) ,url(./prime/prime2.jpg);
+        background-size: 200%;
+    }
+    #text1,#text2{
+        width: 100vw;
+        height: auto;
+        position:absolute;
+        top:50vw;
+        text-align: center;
+    }
+    #text2{
+        position: absolute;
+        top: 120vw;
+    }
+    #header1,#header2{
+        color:white ;
+        font-family:Arial, Helvetica, sans-serif ;
+        letter-spacing: 1.5px;
+        font-size: 6vw;
+        font-weight: 400;
+    }
+    #para1,#para2{
+        color: white;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif ;
+        position: absolute;
+        top: 50px;
+        font-size: 3vw;
+        padding: 10px;
+        font-weight: 300;
+        line-height: 3vw;
+    }
+    #span1,#span2{
+        height: 20vw;
+        width: 250px;
+        background-color: #0F79AF;
+        position: relative;
+        top: 150px;
+        padding: 14px 30px;
+        border-radius: 2px ;
+    }
+    #anchor1,#anchor2{
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }  
+    #content3{
+        width: 100vw;
+        height: 480px;
+        position: absolute;
+        
+    }
+    #text3{
+        width: 40%;
+        height: 100%;
+        position: absolute;
+        padding: 10px 2%;
+    }
+    #header3{
+        font-size: 43px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        position: absolute;
+        top: 30px;
+    }
+    #para3{
+        position: absolute;
+        top: 150px;
+        text-align: justify;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1x;
+        word-spacing: 2px;
+    }
+    #content4{
+        width: 50%;
+        height: auto;
+        position: absolute;
+        right: 0px;
+        top: 30px;
+    }
+    .box{
+        width: 175px;
+        height: 115px;
+    }
+
+    footer{
+        width: 100vw;
+        height: 136px;
+        background-color: #222222;
+        position: absolute;
+        bottom: -1445px;
+    }
+    #content5{
+        width: 100vw;
+        height:136px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #primevideo{
+        width: 120px;
+        height: 40px;
+    }
+    .lasttext{
+        text-decoration: none;
+        padding: 0px 10px ;
+        color: #00aaff;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #para4{
+        color: #8197A4;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
